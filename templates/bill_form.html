@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+<h2> Bill Calculator </h2>
+
+<p>Fill the form and get results</p>
+
+
+<form action="/results" method="post">
+    {{billform.amount.label}} {{billform.amount}}
+    <br>
+    {{billform.car.label}} {{billform.car}}
+    <hr>
+
+    <p> You </p>
+    {{billform.name1.label}} {{billform.name1}}
+    <br>
+    {{billform.DaysInHouse1.label}} {{billform.DaysInHouse1}}
+    <br>
+    {{billform.car_usage1.label}} {{billform.car_usage1}}
+    <hr>
+    <p> Your Roommate </p>
+    {{billform.name2.label}} {{billform.name2}}
+    <br>
+    {{billform.DaysInHouse2.label}} {{billform.DaysInHouse2}}
+    <br>
+    {{billform.car_usage2.label}} {{billform.car_usage2}}
+    <br>
+    {{billform.button}}
+</form>
+</body>
+</html>
